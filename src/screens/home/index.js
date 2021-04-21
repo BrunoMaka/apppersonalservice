@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import first from '../../assets/images/1.png'
 import second from '../../assets/images/2.png'
 import third from '../../assets/images/3.png'
+import { Link } from 'react-router-dom';
 
 
 const Home = () => ( 
@@ -15,7 +16,9 @@ const Home = () => (
                     src={first}                    
                     alt="First slide"                />
                 <Carousel.Caption>
-                    <Button variant="outline-light">Começar</Button>
+                    <Link to="/choice">
+                        <Button variant="outline-light">Começar</Button>
+                    </Link>
                     <h3>Treine em casa</h3>
                     <p>Aulas ao vivo com os melhores profissionais do Brasil</p>
                     
@@ -30,7 +33,9 @@ const Home = () => (
                 />
 
                 <Carousel.Caption>
-                    <Button variant="outline-light">Começar</Button>
+                    <Link to="/choice">
+                        <Button variant="outline-light">Começar</Button>
+                    </Link>
                     <h3>Treine em sua academia</h3>
                     <p>Contrate o melhor porfissional para te acompanhar em sua academia de preferência</p>
                     
@@ -44,7 +49,9 @@ const Home = () => (
                 />
 
                 <Carousel.Caption>
-                    <Button variant="outline-light">Começar</Button>
+                    <Link to="/choice">
+                        <Button variant="outline-light">Começar</Button>
+                    </Link>
                     <h3>Treine em qualquer lugar</h3>
                     <p>O importante é não ficar parado! </p>
                     
